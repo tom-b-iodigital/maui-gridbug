@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage">
+
+    <ScrollView>
+        <StackLayout BackgroundColor="Yellow">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <BoxView Grid.Column="0" Color="Red" WidthRequest="20"></BoxView>
+
+                <Label
+                    Grid.Column="1"
+                    Text="Welcome to .NET Multi-platform App UI"
+                    SemanticProperties.HeadingLevel="Level2"
+                    SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                    FontSize="18"
+                    HorizontalOptions="Center" />
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
